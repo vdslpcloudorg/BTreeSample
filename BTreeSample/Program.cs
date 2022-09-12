@@ -141,6 +141,9 @@ namespace BTreeSample
         public int Count { get; set; }
     }
  
+    /// <summary>
+    /// BT Class
+    /// </summary>
     public class BinaryTree
     {
         public Node Root { get; set; }
@@ -153,7 +156,7 @@ namespace BTreeSample
             while (after != null)
             {
                 before = after;
-                if (value < after.Data) //Is new node in left tree? 
+                if (value < after.Data) //Is new node in left tree?  check
                     after = after.LeftNode;
                 else if (value > after.Data) //Is new node in right tree?
                     after = after.RightNode;
