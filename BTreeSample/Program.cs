@@ -141,6 +141,9 @@ namespace BTreeSample
         public int Count { get; set; }
     }
  
+    /// <summary>
+    /// BT Class
+    /// </summary>
     public class BinaryTree
     {
         public Node Root { get; set; }
