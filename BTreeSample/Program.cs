@@ -156,7 +156,7 @@ namespace BTreeSample
             while (after != null)
             {
                 before = after;
-                if (value < after.Data) //Is new node in left tree?  check
+                if (value < after.Data) //Is new node in left tree? 
                     after = after.LeftNode;
                 else if (value > after.Data) //Is new node in right tree?
                     after = after.RightNode;
